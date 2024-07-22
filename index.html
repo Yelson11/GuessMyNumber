@@ -11,7 +11,8 @@
     <header>
       <h1>Guess My Number!</h1>
       <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
+      <button class="btn again">Play Again!</button>
+      <button class="btn instructions">How to Play</button>
       <div class="number">?</div>
     </header>
     <main>
@@ -27,6 +28,23 @@
         </p>
       </section>
     </main>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>Instructions:</h2>
+      <ol class="list" type="1">
+        <li>You have to type a number between 1 and 20</li>
+        <li>Click on [Check!] button</li>
+        <li>
+          If your number is correct, you will win, if not, a message will appear
+          to give you a hint
+        </li>
+        <li>
+          You can try again, but your score will decrease for each time you try
+        </li>
+        <li>If your score is zero, you will lose the game</li>
+      </ol>
+    </div>
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
